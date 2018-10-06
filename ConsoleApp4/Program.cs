@@ -10,6 +10,16 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            ClsEmployees employee;
+            employee = new ClsEmployees();
+            employee.Age = 35;
+            employee.Name = "Cesar Tapia";
+            employee.DailySalary = 12.5m;
+            decimal total;
+            total = employee.CalculateSalary(30);
+            Console.WriteLine("Employee´s monthly salary " + employee.Name);
+            Console.WriteLine("is: " + total.ToString("c"));
+            Console.ReadKey();
         }
     }
 }
