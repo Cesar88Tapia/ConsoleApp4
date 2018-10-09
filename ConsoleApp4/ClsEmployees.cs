@@ -18,11 +18,11 @@ namespace ConsoleApp4
 
         private string _Name;
 
-        public decimal DailySalary;
-
-        public int Age;
+        public int Age { get; set; }
 
         public string Name { get => _Name; set => _Name = value; }
+
+        public decimal DailySalary { get; set; }
 
         public decimal CalculateSalary(int NumOfDays)
         {
